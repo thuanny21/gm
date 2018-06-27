@@ -12,7 +12,7 @@
        background:none;
        border: none;
        border-radius: 0;
-       padding-left: 450px;
+       padding-left: 15%;
      
  }
  
@@ -100,7 +100,7 @@ html,body{margin: 0;padding: 0; width: 100%; height: 100%;}
     width: 100%;
       height: 100%;
       background-image: linear-gradient(to right,#223344, #556677,#223344  );
-    /*background: url(../img/back.jpeg);*/
+    /*background: url(../img/banner1.png);*/
     display: table;
     background-size: cover;
 }
@@ -112,21 +112,31 @@ html,body{margin: 0;padding: 0; width: 100%; height: 100%;}
     max-width: none;
 }
 .content{
-    text-align: center;
+    text-align: left;
     max-width: 7000px;
     margin: 0 auto;
 }
  
-.content h2{
+.content h1{
     color: #ffffff;
-      font-family: 'Raleway',sand-serif;
-      text-shadow: 0 0 300px #000;
+    font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif"; 
+    text-shadow: 0 0 300px #000;
     font-size: 300%;
+    margin-top: 10px;
      
  }
-.content p{
+
+ .content h2{
+    color: #ffffff;
+    font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif"; 
+    text-shadow: 0 0 300px #000;
+    font-size: 300%;
+    margin-top: 40px;
+     
+ }
+.content h3{
     color: aliceblue;
-    font-size: 16px; 
+    font-size: 20px; 
     font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif"; 
     margin: 20px 0;
 }
@@ -230,34 +240,175 @@ html,body{margin: 0;padding: 0; width: 100%; height: 100%;}
     }
 
 
+    /*Barra de progresso */
 
 
     .progress-bar{
         background-image: linear-gradient(to right,#227799 ,  #0099cc , #88dddd );
+        
+    }
+
+    .progress-80{
+        height: 15px;
+        background-color: #e5e4e2;
+        position: relative;
+    }
+    
+    .progress-80 .progress-bar{
+       position: absolute;
+       height: 95%;
+       background-color: #add555;
+       animation: progress-animation 6s infinite;
+    }
+    
+    @keyframes progress-animation{
+        0% { width: 0%; }
+        100% { width: 80%}
+    }
+
+    .progress-70{
+        height: 15px;
+        background-color: #e5e4e2;
+        position: relative;
+    }
+    
+    .progress-70 .progress-bar{
+       position: absolute;
+       height: 95%;
+       background-color: #add555;
+       animation: progress-animation2 6s infinite;
+    }
+    
+    @keyframes progress-animation2{
+        0% { width: 0%; }
+        100% { width: 70%}
+    }
+
+    .progress-95{
+        height: 15px;
+        background-color: #e5e4e2;
+        position: relative;
+    }
+    
+    .progress-95 .progress-bar{
+       position: absolute;
+       height: 95%;
+       background-color: #add555;
+       animation: progress-animation3 6s infinite;
+    }
+    
+    @keyframes progress-animation3{
+        0% { width: 0%; }
+        100% { width: 95%}
+    }
+
+    .progress-72{
+        height: 15px;
+        background-color: #e5e4e2;
+        position: relative;
+    }
+    
+    .progress-72 .progress-bar{
+       position: absolute;
+       height: 95%;
+       background-color: #add555;
+       animation: progress-animation4 6s infinite;
+    }
+    
+    @keyframes progress-animation4{
+        0% { width: 0%; }
+        100% { width: 72%}
+    }
+
+    .imagem-aparelho img{
+        max-width: 100%;
     }
 
     h2{
         color: #227799;
     }
 
-
-    .beneficios-barra{
-        background-image: linear-gradient(to right,#223344, #556677,#223344  );
+    h1 {
+        color: #227799;
     }
 
-    .beneficios-barra h2{
-        color: white;
+       
+    /* Como funciona */
+       
+    .index-content a:hover{
+        color:black;
+        text-decoration:none;
+    }
+    .index-content{
+        margin-bottom:20px;
+        padding:50px 0px;
+        
+    }
+    .index-content .row{
+        margin-top:20px;
+    }
+    .index-content a{
+        color: black;
+    }
+    .index-content .card{
+        background-color: #FFFFFF;
+        padding:0;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius:4px;
+        box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+    
+    }
+    .index-content .card:hover{
+        box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+        color:black;
+    }
+    .index-content .card img{
+        width:100%;
+        width:200px;
+		height:200px;
+        border-radius:50%;
+        align-items: center;
+        
+       
+    }
+    .index-content .card h4{
+        margin:20px;
         text-align: center;
     }
-
-    .beneficios-barra p{
-        color: white;
-        text-align: center;
-        padding-left: 550px;
-        padding-right: 550px;
+    .index-content .card p{
+        margin:20px;
+        opacity: 0.65;
     }
 
-
+    .index-content .card h5{
+        text-align: center;
+    }
+    .index-content .blue-button{
+        width: 200px;
+        -webkit-transition: background-color 1s , color 1s; /* For Safari 3.1 to 6.0 */
+        transition: background-color 1s , color 1s;
+        min-height: 20px;
+        background-image: linear-gradient(to right,#227799 ,  #0099cc , #88dddd );
+        color: #ffffff;
+        border-radius: 20px;
+        text-align: center;
+        font-weight: lighter;
+        margin: 0px 20px 15px 20px;
+        padding: 5px 0px;
+        display: inline-block;
+        
+    }
+    .index-content .blue-button:hover{
+        background-color: #dadada;
+        color: #002E5B;
+    }
+    @media (max-width: 768px) {
+    
+        .index-content .col-lg-4 {
+            margin-top: 20px;
+        }
+    }
 
     /* footer */
 
@@ -314,3 +465,90 @@ html,body{margin: 0;padding: 0; width: 100%; height: 100%;}
     .copy-c{
         padding-top:15px;
     }
+
+
+    /* tabs - beneficios */
+
+    .experiencia-imagem img{
+        max-width: 100%;
+        margin-top: 40px;
+        margin-left: 25px;
+        width: 400px;
+    }
+
+    .beneficios-barra{
+        background-image: linear-gradient(to right,#223344, #556677,#223344  );
+    }
+
+    .beneficios-barra h2{
+        color: white;
+        text-align: center;
+        
+    }
+
+    .beneficios-barra p{
+        color: white;
+        text-align: center;
+    }
+
+    .experiencia h2 {
+        color: white;
+        text-transform: uppercase;
+        text-align: left;
+        margin-top: 40px;
+        
+    }
+
+     .experiencia-topico p {
+        text-align: left;
+    }
+
+    .beneficios-barra .experiencia-imagem img{
+        max-width: 100%;
+        height: 300px;
+        width: 300px;
+        margin-right: 100px;
+        padding-left: -300px;
+       
+        
+    }
+
+    section {
+        padding: 60px 0;
+    }
+    
+    section .section-title {
+        text-align: center;
+        color: #007b5e;
+        margin-bottom: 50px;
+        
+    }
+
+    section p{
+        text-align: center;
+    }
+    #tabs{
+        background-image: linear-gradient(to right,#223344, #556677,#223344  );
+        color: #eee;
+    }
+    #tabs h6.section-title{
+        color: #eee;
+    }
+    
+    #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        color: #f3f3f3;
+        background-color: transparent;
+        border-color: transparent transparent #f3f3f3;
+        border-bottom: 4px solid !important;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #tabs .nav-tabs .nav-link {
+        border: 1px solid transparent;
+        border-top-left-radius: .25rem;
+        border-top-right-radius: .25rem;
+        color: #eee;
+        font-size: 20px;
+    }
+
+    

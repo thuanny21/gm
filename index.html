@@ -7,20 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
 
-    <title>Hello, world!</title>
+    <title>GM</title>
     
   </head>
 
+<body>
   <nav class="navbar my-nav navbar-default navbar-expand-lg ">
     <div class="container-fluid">
       <div class="navbar-header">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#"><img src="img/gmodontologia.png" height="50px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -31,7 +36,7 @@
             <a class="nav-link" href="#">O que é<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">Benefícios</a>
+              <a class="nav-link" href="#beneficios">Benefícios</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Como funciona?</a>
@@ -55,15 +60,26 @@
   <div class="wrapper">
     <div class="inner">
         <div class="content">
-            <h2 class="wow fadeInDown" data-wow-delay="1s">Full screen landing page with transpatent nav.</h2>
-            <p class="wow bounceInLeft" data-wow-delay="1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure labore voluptate sapiente fuga, ea. Quod ut neque, beatae, architecto fuga saepe. </p>
             <div class="container">
-            <div class="botoes">
-              <div class="row justify-content-center">
-                  <a href="#" class="btn "> Saiba Mais <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                  <a href="#" class="btn btn-info"> Agende sua Avaliaçao <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-            </div>
-            </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <h1 class="wow fadeInDown" data-wow-delay="1s">Invisalign</h1>
+                    <h2 class="wow fadeInDown" data-wow-delay="1s">O alinhador transparente <br> mais avançado do mundo</h2>
+                    <h3 class="wow bounceInLeft" data-wow-delay="1s">O aparelho americano que utiliza jogos de alinhadores de alta tecnologia feitos <br> sob medida. Os alinhadores são praticamente invisiveis e reposicionam seus <br> dentes passo a passo, para conseguir o sorriso que você sempre sonhou. </h3>
+                    <div class="container">
+                    <div class="botoes">
+                      <div class="row justify-content-center">
+                          <a href="#" class="btn "> Saiba Mais <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                          <a href="#" class="btn btn-info"> Agende sua Avaliaçao <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                    <div class="col-sm-6">
+                      <img src="img/back.jpeg">
+                    </div>
+                    </div>
+                    </div>
             </div>
         </div>
     </div>
@@ -73,11 +89,13 @@
 <section class="oquee">
   <div class="container">
       <div class="row">
-        <div class="col-6">
-            
+        <div class="col-sm-6">
+            <div class="imagem-aparelho">
+          <img src="img/aparelho.jpg" >
+            </div>
         </div>
-        <div class="col-6"><br>
-          <h2>O que é Invisalign?</h2>
+        <div class="col-sm-6"><br>
+          <h1>O que é Invisalign?</h1>
           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
           <div class="row">
@@ -88,7 +106,7 @@
                 <p>80%</p>
                 </div>
             </div>
-            <div class="progress">
+            <div class="progress-80">
               <div class="progress-bar " role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"></div>
             </div>
             <br>
@@ -100,8 +118,8 @@
                     <p>70%</p>
                     </div>
                 </div>
-            <div class="progress">
-              <div class="progress-bar " role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="70"></div>
+            <div class="progress-70">
+              <div class="progress-bar " role="progressbar" style="width: 70%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="70"></div>
             </div>
             <br>
             <div class="row">
@@ -112,7 +130,7 @@
                     <p>95%</p>
                     </div>
                 </div>
-            <div class="progress">
+            <div class="progress-95">
               <div class="progress-bar " role="progressbar" style="width: 95%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="95"></div>
             </div>
             <br>
@@ -124,14 +142,11 @@
                     <p>72%</p>
                     </div>
                 </div>
-            <div class="progress">
+            <div class="progress-72">
               <div class="progress-bar " role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="72"></div>
             </div>
 
             <br>
-
-      
-
                 <p class="botao">
                     <a href="#" title="Meu Link">Agendar Avaliaçao <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </a>
                 </p>
@@ -143,54 +158,122 @@
 <br><br>
 
 
-<section class="beneficios">
-  <div class="beneficios-barra">
-    <br><br><br><br>
-    <h2> Beneficios do Invisalign </h2>
-    <br>
-    <div class="row">
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-    </div>
-  </div>
-  
-
-</section>
 
 
-
-  <div class="container">
-    <div class="row">
+<section  id="tabs">
+    <div class="container">
+      <h6 class="section-title h1">Beneficios do Invisalign </h6>
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
       <div class="row">
-          <div class="col-md-4 wow bounceInRight" data-wow-duration="1s" data-wow-delay="1s">
-            <div class="thumbnail"><img src="images/Eiffel-Tower-l.jpg" alt="Thumbnail Image 1">
-              <div class="caption">
-                <h3>Travel package 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid officia facere, tenetur similique, sapiente optio magni, expedita laborum mollitia saepe perspiciatis! Sint qui hic repudiandae, nobis quod ipsum deserunt sed.</p>
-                <p><a href="#" class="btn btn-primary" role="button">Bye now!</a></p>
-              </div>
+        <div class="col-xs-12 ">
+          <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+              <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+              <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">About</a>
             </div>
-        </div>
-        <div class="col-md-4 wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">
-          <div class="thumbnail"><img src="images/Holivudas-3.jpg" alt="Thumbnail Image 1">
-              <div class="caption">
-                <h3>Travel package 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt voluptate numquam impedit esse recusandae iure rem expedita totam asperiores reiciendis repellendus adipisci obcaecati sint, sed sunt natus, excepturi eum illo.</p>
-                <p><a href="#" class="btn btn-primary" role="button">Bye now!</a></p>
-              </div>
+          </nav>
+          <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="experiencia-imagem">
+                      <img src="img/cliente.jpg" >
+                      </div>                    
+                    </div>
+                    <div class="col-sm-6"><br>
+                      <div class="experiencia">
+                      <h2>Uma experiência moderna e totalmente digitalizada para</h2>
+                      </div>
+                      <div class="experiencia-topico">
+                      <p>Alinhadores transparentes Invisalign</p>
+                      <p>Veja seu novo sorriso antes de iniciar o tratamento</p>
+                      <p>O roteiro digital para o seu novo sorriso</p>
+                      <p>Transforme movimentos complexos em simples e previsíveis</p>
+                      </div>
+                        <br>
+                            <p class="botao">
+                                <a href="#" title="Meu Link">Agendar Avaliaçao <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </a>
+                            </p>
+                      </ul>
+                    </div>
+                  </div>
             </div>
-        </div>
-        <div class="col-md-4 wow bounceIn" data-wow-duration="1s" data-wow-delay="1s">
-          <div class="thumbnail"><img src="images/River-Boat-AMA-Danube-View-A-Excellent.jpg" alt="Thumbnail Image 1">
-              <div class="caption">
-                <h3>Travel package 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quis quibusdam totam, facere voluptatibus. Commodi sit, exercitationem expedita aliquam incidunt. Cupiditate laborum expedita accusamus neque velit amet repudiandae nemo fugiat?</p>
-                <p><a href="#" class="btn btn-primary" role="button">Bye now!</a></p>
-              </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+             profile
             </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+             contato
+            </div>
+            <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+              sobre
+            </div>
+          </div>
+        
         </div>
       </div>
     </div>
-  </div>
+  </section>
+  <!-- ./Tabs -->
+
+
+
+  <section class="funciona" id="comofunciona">
+      <div class="como-funciona">
+          <div class="container">
+          <br><br><br><br>
+          <h2> Como funciona o plano de tratamento? </h2>
+          <br>
+          <p>Muitas tecnologias poderosas e a experiência do ortodontista são combinadas para criar um <br> plano digital, de modo a dar forma ao seu novo sorriso. Vamos dar uma olhada.</p>
+          <div class="index-content">
+              <div class="container">
+                <div class="row">
+                      <a href="blog-ici.html">
+                          <div class="col-lg-4">
+                              <div class="card">
+                                  <img src="http://cevirdikce.com/proje/hasem-2/images/finance-1.jpg">
+                                  <h4>1º Passo</h4>
+                                  <h5>Agendamento de Avaliação</h5>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                  <a href="blog-ici.html" class="blue-button">Agende sua avaliação <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </a>
+                              </div>
+                          </div>
+                      </a>
+                      <a href="blog-ici.html">
+                          <div class="col-lg-4">
+                              <div class="card">
+                                  <img src="http://cevirdikce.com/proje/hasem-2/images/finance-2.jpg">
+                                  <h4>2º Passo</h4>
+                                  <h5>Entrevista, Fotos, Diagnóstico </h5>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                  <a href="blog-ici.html" class="blue-button">Agende sua avaliação <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </a>
+                              </div>
+                          </div>
+                      </a>
+                      <a href="blog-ici.html">
+                          <div class="col-lg-4">
+                              <div class="card">
+                                  <img src="http://cevirdikce.com/proje/hasem-2/images/finance-3.jpg">
+                                  <h4>3º Passo</h4>
+                                  <h5>Criação do plano 3D Personalizado</h5>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                  <a href="blog-ici.html" class="blue-button">Agende sua avaliação <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </a>
+                              </div>
+                          </div>
+                      </a>
+          </div>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+  </section>
+
+
+
+
+  
 
 
 
@@ -264,9 +347,7 @@
  
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.js"></script>
+
+</body>
+</html>
  
- 
- <script src="js/wow.js"></script>
- <script>
-      new WOW().init();
- </script> 
