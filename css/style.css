@@ -5,16 +5,23 @@
 
 
 .my-nav{
-    position: relative;
+    position: fixed;
        top:20px;
        width: 100%;
        z-index: 999;
        background:none;
        border: none;
        border-radius: 0;
-       padding-left: 15%;
+       padding-left: 0;
+       text-align: right;
+    
      
  }
+ 
+
+ .menu-diferente {
+     background: rgba(30,156,161,1) 
+}
  
 .my-nav {
   background-color:rgba(0,0,0,0.00);
@@ -32,20 +39,27 @@
 }
 .my-nav .navbar-nav > li > a {
   color: #ffffff;
+  
 }
 .my-nav .navbar-nav > li > a:hover,
 .my-nav .navbar-nav > li > a:focus {
-  color: #ecdbff;
+    color: #fdfdfd;
+  border: 3px solid white;
+  border-radius: 50px;
+  border-color: #0099cc;
 }
 .my-nav .navbar-nav > .active > a,
 .my-nav .navbar-nav > .active > a:hover,
 .my-nav .navbar-nav > .active > a:focus {
   color: #fdfdfd;
-  background-color: #3962ff;
+  border: 3px solid white;
   border-radius: 50px;
-  border-color: #88dddd;
+  border-color: #0099cc;
+ 
   
 }
+
+
 .my-nav .navbar-nav > .open > a,
 .my-nav .navbar-nav > .open > a:hover,
 .my-nav .navbar-nav > .open > a:focus {
@@ -98,8 +112,8 @@ html,body{margin: 0;padding: 0; width: 100%; height: 100%;}
     top:-100px;
     position: relative;
     width: 100%;
-      height: 100%;
-      background-image: linear-gradient(to right,#223344, #556677,#223344  );
+    height: 100%;
+    background-image: linear-gradient(to right,#223344, #556677,#223344  );
     /*background: url(../img/banner1.png);*/
     display: table;
     background-size: cover;
@@ -110,11 +124,19 @@ html,body{margin: 0;padding: 0; width: 100%; height: 100%;}
     vertical-align: middle;
     widows: 100%;
     max-width: none;
+    padding-top: 100px;
+}
+
+.wrapper img {
+    max-width: 100%;
+    width: 1000px;
+    height: 750px;
 }
 .content{
     text-align: left;
     max-width: 7000px;
     margin: 0 auto;
+    padding-top: 200px;
 }
  
 .content h1{
@@ -131,7 +153,7 @@ html,body{margin: 0;padding: 0; width: 100%; height: 100%;}
     font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif"; 
     text-shadow: 0 0 300px #000;
     font-size: 300%;
-    margin-top: 40px;
+    margin-bottom: 50px;
      
  }
 .content h3{
@@ -139,11 +161,19 @@ html,body{margin: 0;padding: 0; width: 100%; height: 100%;}
     font-size: 20px; 
     font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif"; 
     margin: 20px 0;
+    margin-bottom: 20px;
 }
  
 .thumbnail{
     border: none;
 }
+
+
+.botao-inicio{
+    padding-right: 200px;
+}
+
+
 
  
  
@@ -325,31 +355,43 @@ html,body{margin: 0;padding: 0; width: 100%; height: 100%;}
     }
 
     h2{
-        color: #227799;
+        color: #0099cc;
     }
 
     h1 {
-        color: #227799;
+        color: #0099cc;
     }
 
        
     /* Como funciona */
+
+    .como-funciona h2{
+        text-align: center;
+    }
+
+    .como-funciona h5{
+        color: #0099cc;
+    }
        
     .index-content a:hover{
         color:black;
         text-decoration:none;
     }
+
     .index-content{
         margin-bottom:20px;
         padding:50px 0px;
         
     }
+
     .index-content .row{
         margin-top:20px;
     }
+
     .index-content a{
         color: black;
     }
+
     .index-content .card{
         background-color: #FFFFFF;
         padding:0;
@@ -357,25 +399,29 @@ html,body{margin: 0;padding: 0; width: 100%; height: 100%;}
         -moz-border-radius: 4px;
         border-radius:4px;
         box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
-    
+        
     }
+
     .index-content .card:hover{
         box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
         color:black;
     }
+
     .index-content .card img{
         width:100%;
         width:200px;
 		height:200px;
         border-radius:50%;
-        align-items: center;
+        margin-left: 60px;
+        margin-top: 20px;
         
-       
     }
+
     .index-content .card h4{
         margin:20px;
         text-align: center;
     }
+
     .index-content .card p{
         margin:20px;
         opacity: 0.65;
@@ -384,6 +430,7 @@ html,body{margin: 0;padding: 0; width: 100%; height: 100%;}
     .index-content .card h5{
         text-align: center;
     }
+
     .index-content .blue-button{
         width: 200px;
         -webkit-transition: background-color 1s , color 1s; /* For Safari 3.1 to 6.0 */
@@ -397,12 +444,15 @@ html,body{margin: 0;padding: 0; width: 100%; height: 100%;}
         margin: 0px 20px 15px 20px;
         padding: 5px 0px;
         display: inline-block;
+        align-items: center;
         
     }
+
     .index-content .blue-button:hover{
         background-color: #dadada;
-        color: #002E5B;
+        color: white;
     }
+
     @media (max-width: 768px) {
     
         .index-content .col-lg-4 {
@@ -410,64 +460,30 @@ html,body{margin: 0;padding: 0; width: 100%; height: 100%;}
         }
     }
 
-    /* footer */
 
-    .index-social{
-        
+    /* tabela */
+
+    .bg-tabela {
+        background: #227799;
         color: #99aabb;
-        text-align: center;
     }
-    .link-area .fa-li{
-        width:40px;
-        height:40px;
-        border-radius:50%;
-        border:solid 1px #227799;
-        list-style-type:none;
-        margin:5px;
-        display:inline-block;
-        
-    }
-    .index-social a{
-        color:#227799;
-        font-size:25px;
-        display:block;
-        float:left;
-        padding:10px;
-    }
-    .index-link h3{
-        text-align:center;
-       color: #227799;
-       text-align:left;
-       
-    }
-    .index-link{
-        /*background-color:#000;*/
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .index-link ul{
-        padding:0px;
-    }
-    .index-link ul li{
-        list-style-type:none;
-    }
-    .index-link ul li a{
-      text-decoration:none;
-      font-size:16px;
-      color:#99aabb;
-      display:block;
-      padding:5px 0;
-      text-align:left;
-    }
-    .index-link ul li a:hover{
-         text-decoration:underline;
-    }
-    .copy-c{
-        padding-top:15px;
-    }
+
+   .bg-tabela th{
+       color: white;
+       text-align: center;
+   }
+
+   .bg-tbody{
+       background: #f0f0f0;
+       color: #556677;
+   }
+
+    
 
 
     /* tabs - beneficios */
+
+   
 
     .experiencia-imagem img{
         max-width: 100%;
@@ -479,6 +495,8 @@ html,body{margin: 0;padding: 0; width: 100%; height: 100%;}
     .beneficios-barra{
         background-image: linear-gradient(to right,#223344, #556677,#223344  );
     }
+
+    
 
     .beneficios-barra h2{
         color: white;
@@ -519,7 +537,7 @@ html,body{margin: 0;padding: 0; width: 100%; height: 100%;}
     
     section .section-title {
         text-align: center;
-        color: #007b5e;
+        color: #0099cc;
         margin-bottom: 50px;
         
     }
@@ -527,12 +545,18 @@ html,body{margin: 0;padding: 0; width: 100%; height: 100%;}
     section p{
         text-align: center;
     }
+
     #tabs{
         background-image: linear-gradient(to right,#223344, #556677,#223344  );
         color: #eee;
     }
+
     #tabs h6.section-title{
         color: #eee;
+    }
+
+    #nav-tab{
+        display: contents;
     }
     
     #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
@@ -542,7 +566,9 @@ html,body{margin: 0;padding: 0; width: 100%; height: 100%;}
         border-bottom: 4px solid !important;
         font-size: 20px;
         font-weight: bold;
+        
     }
+
     #tabs .nav-tabs .nav-link {
         border: 1px solid transparent;
         border-top-left-radius: .25rem;
@@ -551,4 +577,140 @@ html,body{margin: 0;padding: 0; width: 100%; height: 100%;}
         font-size: 20px;
     }
 
+
+    /*Formulario */
+
+    .form-contato {
+        background-image: linear-gradient(to right,#223344, #556677,#223344  );
+    }
+
+    .form-contato h6 {
+        color: white;
+    }
+
+    .form-contato p {
+        color: white;
+    }
+
+    .form-control {
+        background: transparent;
+        
+    }
+
+    .form-contato placeholder {
+        color: white;
+    }
+
     
+    
+
+    /* footer */
+
+    
+
+    .link-area .fa-li{
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        border:solid 1px #0099cc;
+        list-style-type:none;
+        margin:5px;
+        display:inline-block;
+        
+    }
+
+    .index-social a{
+        color:#0099cc;
+        font-size:25px;
+        display:block;
+        float:left;
+        padding:10px;
+    }
+
+    .index-link h3{
+        text-align:center;
+       color: #0099cc;
+       text-align:left;
+       
+    }
+    .index-link{
+        /*background-color:#000;*/
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .index-link ul{
+        padding:0px;
+    }
+    .index-link ul li{
+        list-style-type:none;
+    }
+    .index-link ul li a{
+      text-decoration:none;
+      font-size:16px;
+      color:#99aabb;
+      display:block;
+      padding:5px 0;
+      text-align:left;
+    }
+    .index-link ul li a:hover{
+         text-decoration:underline;
+    }
+    .copy-c{
+        padding-top:15px;
+    }
+
+    .index-rodape p{
+        text-align: center;
+        color: #99aabb;
+        
+    }
+
+   
+
+
+
+    /*Animações*/
+
+.js .introducao h1, .js .introducao h2, .js introducao h3, .js .introducao blockquote, .js .introducao .btn, .js .animar, .js .animar-interno, .js .introducao-interna h1, .js .introducao-interna p {
+	opacity: 0;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+}
