@@ -12,3 +12,6 @@ $(window).scroll(function() {
 // demo only 
 // open link in new tab without ugly target="_blank"
 $("a[href^='http']").attr("target", "_blank");
+
+
+

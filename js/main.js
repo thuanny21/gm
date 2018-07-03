@@ -19,7 +19,7 @@ Visibility.onVisible(function(){
 		$(".introducao h2").addClass("animated fadeInDown");
 	}, 400);
 	setTimeout(function () {
-		$(".introducao h3").addClass("animated fadeInDown");
+		$(".introducao p").addClass("animated fadeInDown");
 	}, 800);
 	setTimeout(function () {
 		$(".introducao .btn").addClass("animated fadeInDown");
@@ -32,7 +32,7 @@ Visibility.onVisible(function(){
 	}, 400);
 
 	setTimeout(function () {
-		$(".introducao-interna h1").addClass("animated fadeInDown");
+		$(".introducao-interna h1, h6").addClass("animated fadeInDown");
 	}, 400);
 	setTimeout(function () {
 		$(".introducao-interna p").addClass("animated fadeInDown");
@@ -53,3 +53,39 @@ $(function() {
     }
   });
 });
+
+
+
+
+//scroll
+$('.navbar a[href^="#"]').on('click', function(e) {
+	e.preventDefault();
+	var id = $(this).attr('href'),
+			targetOffset = $(id).offset().top;
+
+	$('html, body').animate({
+			scrollTop: targetOffset - 60
+	}, 500);
+});
+
+
+
+//Example starter JavaScript for disabling form submissions if there are invalid fields
+
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
